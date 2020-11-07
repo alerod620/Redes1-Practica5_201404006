@@ -12,6 +12,10 @@
 
 ## CONFIGURACIÓN
 
+### SUBREDES
+* Se utilizó la página http://www.vlsmcalc.net/ para el cálculo de las subredes, utilizando como dirección de red la dirección 192.168.0.0./24.
+![image](https://user-images.githubusercontent.com/61027811/98426334-08b49880-205e-11eb-814b-0b3fed03fffb.png)
+
 ### VLAN
 * La configuración de las vlans se realizan únicamente en el EtherSwitch 1.
 * Al iniciar la consola del EtherSwitch se utiliza el comando ***confing terminal*** y luego el comando ***vlan 'vlan'*** para configurar la *VLAN* deseada.
