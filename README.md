@@ -8,7 +8,7 @@
 * 1 Cloud
 
 ## TOPOLOGÍA DE RED
-![image](https://user-images.githubusercontent.com/61027811/98431524-b4201600-207b-11eb-9dc8-33523425311a.png)
+![image](https://user-images.githubusercontent.com/61027811/98431714-88059480-207d-11eb-909f-eb027141e708.png)
 
 ## CONFIGURACIÓN
 
@@ -28,6 +28,9 @@
 | 70 | ![image](https://user-images.githubusercontent.com/61027811/98424174-8bd1f080-2056-11eb-811c-aff7c10f016d.png) |
 
 ### MODO TRUNCAL
+
+#### ETHERSWITCH
+
 * Se inicializa la configuración de la terminal y se ingresa el comando ***int 'interfaz'*** para indicar que *interfaz* se va a configurar.
 *	Con el comando ***switchport mode trunk*** se indica que la *interfaz* se configurará en modo truncal.
 *	Luego se utiliza ***switchport trunk allowed vlan 1,20,50,70,1002-1005*** para indicar las *VLANs* con las que se trabajarán.
@@ -36,3 +39,9 @@
 |  | Imagen |
 |:------:|:-----------:|
 | ESW1 | ![image](https://user-images.githubusercontent.com/61027811/98431422-ba61c280-207a-11eb-8dac-cbd0f781c359.png) |
+
+#### SWITCH
+
+* Solo se ingresa a la configuración del switch y se cambia la *VLAN* para cada puerto.
+
+![image](https://user-images.githubusercontent.com/61027811/98431807-504b1c80-207e-11eb-8b47-d1cfdaeaa82e.png)
