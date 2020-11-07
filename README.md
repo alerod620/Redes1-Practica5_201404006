@@ -59,7 +59,6 @@ Se realiza el mismo procedimiento para las siguientes subredes, utilizando siemp
 
 
 ### VLAN
-* La configuración de las vlans se realizan únicamente en el EtherSwitch 1.
 * Al iniciar la consola del EtherSwitch se utiliza el comando ***confing terminal*** y luego el comando ***vlan 'vlan'*** para configurar la *VLAN* deseada.
 *	Se utiliza ***name 'nombre'*** para darle un nombre a la *VLAN* y el comando ***end*** para salir de la configuración.
 
@@ -68,6 +67,22 @@ Se realiza el mismo procedimiento para las siguientes subredes, utilizando siemp
 | 20 | ![image](https://user-images.githubusercontent.com/61027811/98424204-a0ae8400-2056-11eb-8372-a3ca683d8a44.png) |
 | 50 | ![image](https://user-images.githubusercontent.com/61027811/98424152-78bf2080-2056-11eb-9cfb-2414f8419e2f.png) |
 | 70 | ![image](https://user-images.githubusercontent.com/61027811/98424174-8bd1f080-2056-11eb-811c-aff7c10f016d.png) |
+
+#### ROUTER
+Al tener creadas las vlan ahora se procede a crear las subintefaces con los siguientes comandos:
+
+> Int f#/#.#
+
+> Encapsulation dot1q #vlan
+
+> Ip address <Gateway> <Mask>
+    
+> Exit
+
+Por ejemplo para la vlan 50 se le configuro la ip:`192.168.0.1` y la mascara de red:`255.255.255.128`.
+
+![image](https://user-images.githubusercontent.com/61027811/98432755-192d3900-2087-11eb-849b-fbaac2e4a1c3.png)
+
 
 ### MODO TRUNCAL
 
@@ -88,7 +103,4 @@ Se realiza el mismo procedimiento para las siguientes subredes, utilizando siemp
 
 ![image](https://user-images.githubusercontent.com/61027811/98431807-504b1c80-207e-11eb-8b47-d1cfdaeaa82e.png)
 
-#### ROUTER
-
-![image](https://user-images.githubusercontent.com/61027811/98432755-192d3900-2087-11eb-849b-fbaac2e4a1c3.png)
 
