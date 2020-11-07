@@ -13,8 +13,50 @@
 ## CONFIGURACIÓN
 
 ### SUBREDES
-* Se utilizó la página http://www.vlsmcalc.net/ para el cálculo de las subredes, utilizando como dirección de red la dirección 192.168.0.0./24.
-![image](https://user-images.githubusercontent.com/61027811/98426334-08b49880-205e-11eb-814b-0b3fed03fffb.png)
+A continuación se muestra el cálculo de las subredes, utilizando como dirección de red la dirección 192.168.0.0./24. Para ello se inicia con la subred que posee mayor número de host a la subred con menor número de host.
+
+| DEPARTAMENTO | HOST |
+|:------:|:-----------:|
+| Profesores | 52 |
+| Estudiantes | 82 |
+
+#### PASOS :
+
+1. Identificar la mascara actual
+
+> 192.168.1.0/24
+> **Máscara 255.255.255.0**
+
+2. Aplicar la formula 
+```
+2^m - 2 >= Host 
+8^2 Host
+M = 7
+2^7 = 126
+126 > 82 
+```
+3. Obtener la nueva máscara
+```
+    11111111.11111111.11111111.10000000
+       255  .   255  .   255  .   168
+```
+
+4. Salto de red: ***constante 256***
+
+```
+  256 - 128 = 128
+```
+  Esto quiere decir que a partir de la 128 inicia la siguiente.
+  
+Se realiza el mismo procedimiento para las siguientes subredes, utilizando siempre la mascara original y se obtiene el siguiente resultado:
+
+
+| NO | HOST SOLICITADO | HOST ENCONTRADOS | DIRECCION DE RED | MAX | MASCARA PUNTEADA | PRIMERA IP | ULTIMA IP | DIRECCION DE BROADCAST | 
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:-----------:|
+| 2 | 82 | 126 | 192.168.0.0 | /25 | 255.255.255.128 | 192.168.0.1 | 192.168.0.126 | 192.168.0.127 |
+| 1 | 52 | 62 | 192.168.0.128 | /26 | 255.255.255.192 | 192.168.0.129 | 192.168.0.190 | 192.168.0.191 |
+
+
 
 ### VLAN
 * La configuración de las vlans se realizan únicamente en el EtherSwitch 1.
@@ -45,3 +87,8 @@
 * Solo se ingresa a la configuración del switch y se cambia la *VLAN* para cada puerto.
 
 ![image](https://user-images.githubusercontent.com/61027811/98431807-504b1c80-207e-11eb-8b47-d1cfdaeaa82e.png)
+
+#### ROUTER
+
+![image](https://user-images.githubusercontent.com/61027811/98432755-192d3900-2087-11eb-849b-fbaac2e4a1c3.png)
+
