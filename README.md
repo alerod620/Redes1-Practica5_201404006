@@ -26,3 +26,13 @@
 | 20 | ![image](https://user-images.githubusercontent.com/61027811/98424204-a0ae8400-2056-11eb-8372-a3ca683d8a44.png) |
 | 50 | ![image](https://user-images.githubusercontent.com/61027811/98424152-78bf2080-2056-11eb-9cfb-2414f8419e2f.png) |
 | 70 | ![image](https://user-images.githubusercontent.com/61027811/98424174-8bd1f080-2056-11eb-811c-aff7c10f016d.png) |
+
+### MODO TRUNCAL
+* Se inicializa la configuración de la terminal y se ingresa el comando ***int 'interfaz'*** para indicar que *interfaz* se va a configurar.
+*	Con el comando ***switchport mode trunk*** se indica que la *interfaz* se configurará en modo truncal.
+*	Luego se utiliza ***switchport trunk allowed vlan 1,20,50,70,1002-1005*** para indicar las *VLANs* con las que se trabajarán.
+* Esto se realiza para cada *interfaz* que esté habilitado en cada EtherSwitch.
+
+|  | Imagen |
+|:------:|:-----------:|
+| ESW1 | ![image](https://user-images.githubusercontent.com/61027811/98431422-ba61c280-207a-11eb-8dac-cbd0f781c359.png) |
