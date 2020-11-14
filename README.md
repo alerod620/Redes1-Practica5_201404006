@@ -121,8 +121,13 @@ Protocolo de enrutamiento de Gateway interio.
 Se configuro en los dispositivos R2, R3 y R4.
 
 > conf t
+
 > router eigrp 10
+
 > network 10.10.0.0 0.0.0.255
+
 > network 20.10.0.0 0.0.0.255
+
 > network 192.168.15.0 0.0.0.255
+
 > end
