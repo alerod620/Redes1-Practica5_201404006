@@ -143,3 +143,36 @@ En R2 se configuro el protocolo RIP hacia las redes de la topología, asi como a
 ![image](https://user-images.githubusercontent.com/53104989/99139467-8e0bf000-25fe-11eb-973e-5739fdd527ea.png)
 
 ## Coneción entre Topologías
+La conexión entre topologías se realizó mediante vpn, utilizando una maquina virtual con Ubuntu 18, de Google cloud.
+
+![image](https://user-images.githubusercontent.com/53104989/99140125-720b4d00-2604-11eb-8b7b-0801534fd2a4.png)
+
+Se creo, en la máquina virtual, una regla de firewall para la entrada y salida que permite el trafico de cualquier rango de ip en el puerto 1194.
+
+![image](https://user-images.githubusercontent.com/53104989/99140166-df1ee280-2604-11eb-9059-a6d3ce366e8c.png)
+
+Se instalo el archivo de configuraciones de la vpn con el siguiente comando:
+
+> sudo wget https://cubaelectronica.com/OpenVPN/openvpn-install.sh && sudo bash openvpn-install.sh 
+
+Nos conectamos a la red vpn mediante el archivo de cliente que nos genera la maquina virtual, esto nos asigna una ip en la vpn por la cual nos comunicaremos hacia la otra computadora con la otra topología.
+
+![image](https://user-images.githubusercontent.com/53104989/99140222-75eb9f00-2605-11eb-8aba-13e9d42a8c78.png)
+
+En GNS3 la conexión se realiza mediante una nube 
+
+![image](https://user-images.githubusercontent.com/53104989/99140232-81d76100-2605-11eb-88d7-6c8ea95a68a8.png)
+
+La cual se configura de la siguiente manera:
+
+![image](https://user-images.githubusercontent.com/53104989/99140238-8c91f600-2605-11eb-8ad7-b09c269ca2ee.png)
+
+* local port: puerto de conexión de la computadora donde se realiza la configuración.
+* remote host: ip de la computadora con la otra topología.
+* remote port: puerto de conexión de la computadora con la otra topología.
+
+**los puertos tienen que estar intercambiados en las configuraciones de las dos computadoras, ya que el de conexión de una será el remote de la otra**
+
+La conexión se realiza mediate el UDP tunels el cual se conecta a la interfaz del rauter donde se realiza el ruteo para acceder a la red de la otra topología.
+
+![image](https://user-images.githubusercontent.com/53104989/99140246-a8959780-2605-11eb-8b42-7e0b39622231.png)
