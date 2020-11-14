@@ -104,3 +104,9 @@ Por ejemplo para la vlan 50 se le configuro la ip:`192.168.0.1` y la mascara de 
 ![image](https://user-images.githubusercontent.com/61027811/98431807-504b1c80-207e-11eb-8b47-d1cfdaeaa82e.png)
 
 
+## TOPOLOGÍA 2
+
+![image](https://user-images.githubusercontent.com/53104989/99133868-4aef5400-25e1-11eb-9f27-35310cb899df.png)
+
+#### Configuraciones de topología 2 
+
