@@ -131,3 +131,9 @@ Se configuro en los dispositivos R2, R3 y R4.
 > network 192.168.15.0 0.0.0.255
 
 > end
+
+### VRRP
+Virtual router redundance protocol.
+Se configuro en los dispositivos R3 y R4.
+
+### Enrutamiento 
