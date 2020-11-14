@@ -136,4 +136,10 @@ Se configuro en los dispositivos R2, R3 y R4.
 Virtual router redundance protocol.
 Se configuro en los dispositivos R3 y R4.
 
-### Enrutamiento 
+## Enrutamiento 
+###RIP: protocolo de informacion de entrutamiento.
+En R2 se configuro el protocolo RIP hacia las redes de la topología, asi como a la red que conecta las dos topologías 8.8.8.0
+
+![image](https://user-images.githubusercontent.com/53104989/99139467-8e0bf000-25fe-11eb-973e-5739fdd527ea.png)
+
+## Coneción entre Topologías
