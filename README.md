@@ -108,5 +108,15 @@ Por ejemplo para la vlan 50 se le configuro la ip:`192.168.0.1` y la mascara de 
 
 ![image](https://user-images.githubusercontent.com/53104989/99133868-4aef5400-25e1-11eb-9f27-35310cb899df.png)
 
-#### Configuraciones de topología 2 
+## COMPONENTES 
+* 3 Router
+* 1 EtherSwitch
+* 2 Switch
+* 2 Máquina Virtual
+* 1 Cloud
+
+### Configuraciones de topología 2 
+### EIGRP 
+Protocolo de enrutamiento de Gateway interio.
+Se configuro en los dispositivos R2, R3 y R4.
 
