@@ -181,3 +181,7 @@ La cual se configura de la siguiente manera:
 La conexión se realiza mediate el UDP tunels el cual se conecta a la interfaz del rauter donde se realiza el ruteo para acceder a la red de la otra topología.
 
 ![image](https://user-images.githubusercontent.com/53104989/99140246-a8959780-2605-11eb-8b42-7e0b39622231.png)
+
+## Captura de paquetes
+
+![icmp_](https://user-images.githubusercontent.com/45029403/99871359-57564c80-2b9f-11eb-9832-194813da8252.jpg)
