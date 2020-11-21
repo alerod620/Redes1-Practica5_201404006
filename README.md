@@ -116,6 +116,11 @@ Por ejemplo para la vlan 50 se le configuro la ip:`192.168.0.1` y la mascara de 
 * 1 Cloud
 
 ### Configuraciones de topología 2 
+### Ruteo Estatico
+Nos conectamos con ruteo estatoco a la red 8.0.0.0
+
+![image](https://user-images.githubusercontent.com/53104989/99868406-d8094e80-2b87-11eb-9925-3a131ff29785.png)
+
 ### EIGRP 
 Protocolo de enrutamiento de Gateway interio.
 Se configuro en los dispositivos R2, R3 y R4.
